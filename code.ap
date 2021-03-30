@@ -1,1 +1,1 @@
-${10|num}{5|hey}next {num+6+hey}
+$a number {@num} {?num=2>'is a 2~'not a 2}

@@ -59,7 +59,9 @@ def run(string : str, variables = {}):
             return variables[string[string.index('|')+1:]]
     elif '|' in string:
         variables[string[string.index('|')+1:]] = string[:string.index('|')]
-    elif True in list(map(lambda letter: letter in ['+','-','*','/'], string)):
+    elif True in list(map(lambda letter: letter in ['+','-','*','/','='], string)):
+        
+        string = string.replace('=','==')
         for key in variables.keys():
             if key in string:
                 string = string.replace(key,variables[key])
