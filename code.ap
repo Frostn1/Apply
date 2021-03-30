@@ -1,0 +1,2 @@
+[1|x&$hello {x} next num is {?.@num>(num)~'goodbye}]
+$num is {num} x is {x}
