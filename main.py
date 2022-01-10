@@ -77,8 +77,9 @@ def getVal(string : str, variables : dict):
     except:
         return run(string, variables)
 def main(file_path : str):
-    if file_path[file_path.index(".")+1:] != "ap" :
-        raise Exception("error : fuck off")
+    fileExt = file_path[-(file_path[::-1].index(".")):]
+    if fileExt != "ap" :
+        raise Exception("error : invalid file ext expected `ap` but got `"+fileExt+"`")
     with open(file_path,"r") as file1:
         for line in file1.readlines():
             run(line)
