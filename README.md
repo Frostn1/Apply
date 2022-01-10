@@ -1,4 +1,4 @@
-# Applu
+# Apply
 The Apply programming language is a tiny in size, foolish language built for 1st of April.
 
 
